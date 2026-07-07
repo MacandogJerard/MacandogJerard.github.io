@@ -1,31 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Personal Website</title>
+        <title>Jerard Francis B. Macandog</title>
         <link rel="stylesheet" href="website.css">
     </head>
     <body>
-        <div class="container">
-            <nav>
-                <img src="images/nameLogo.png" class="logo">
-                <ul>
-                    <li><a href="abouttPage.html">About</a></li>
-                </ul>
-   
+        <header class="top-bar">
+            <div class="brand-name">Jerard Francis B. Macandog</div>
+            <nav class="main-nav">
+                <a href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
             </nav>
-            <div class="text-box">
-                <p>HELLO!</p>
-                <h1>I'M FRANCIS</h1>
-                <h3>INFORMATION TECHNOLOGY STUDENT</h3>
+        </header>
 
+        <main class="page-wrapper">
+            <section id="home" class="hero-section">
+                <div class="hero-left">
+                    <img src="images/box.jpg" alt="Jerard Francis B. Macandog" class="profile-photo">
+                    <div class="hero-title">
+                        <p>Welcome to my page</p>
+                        <h1>Hi, I’m Francis</h1>
+                        <p class="hero-description">Student, web developer, and basketball fan.</p>
+                    </div>
+                </div>
+            </section>
 
-            </div>
-            
-            <div class="social-icons">
-                <a href="https://www.facebook.com/jerardmcndg?mibextid=ZbWKwL"><img src="fb.png" alt=""></a>
-                <a href="https://www.instagram.com/realnbox/"><img src="images/instagram.png" alt=""></a>
-            </div>
-        </div>
+            <section id="about" class="section-card">
+                <h2>About Me</h2>
+                <p>I'm Jerard Francis Baile Macandog, and I'm excited to share a bit about myself. As a student, I enjoy playing video games, basketball, and creating new web experiences.</p>
+                <div class="editable-panel" contenteditable="true">
+                    <h3>Editable text panel</h3>
+                    <p>Tap here to write your own notes, achievements, or a personal introduction. This text is editable directly on the page.</p>
+                </div>
+            </section>
+
+            <section id="skills" class="section-card">
+                <h2>Skills</h2>
+                <p>Web development, HTML/CSS, JavaScript, game development basics, and creative design.</p>
+            </section>
+
+            <section id="experience" class="section-card">
+                <h2>Experience</h2>
+                <p>Learning through projects, school assignments, and personal practice in programming and digital design.</p>
+            </section>
+
+            <section id="contact" class="section-card">
+                <h2>Contact</h2>
+                <p>Find me on Facebook and Instagram below. You can also update this section with your preferred contact details.</p>
+            </section>
+        </main>
+
+        <footer class="social-footer">
+            <a href="https://www.facebook.com/jerardmcndg?mibextid=ZbWKwL" target="_blank" rel="noreferrer">Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        </footer>
     </body>
 </html>
