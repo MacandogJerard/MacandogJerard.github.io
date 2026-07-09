@@ -35,22 +35,56 @@ a {
     letter-spacing: 1px;
 }
 
-.main-nav {
-    display: flex;
-    gap: 28px;
-    flex-wrap: wrap;
+.dropdown {
+    position: relative;
 }
 
-.main-nav a {
+.dropdown details {
+    position: relative;
+}
+
+.dropdown summary {
+    list-style: none;
+    cursor: pointer;
     color: #f4ecd8;
     font-size: 14px;
-    padding: 8px 12px;
+    padding: 8px 14px;
     border-radius: 6px;
-    transition: background 0.25s ease;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(244, 236, 216, 0.16);
 }
 
-.main-nav a:hover {
+.dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 10px);
+    display: grid;
+    gap: 10px;
+    background: #404e32;
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid rgba(244, 236, 216, 0.16);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+    z-index: 100;
+}
+
+.dropdown-menu a {
+    color: #f4ecd8;
+    padding: 10px 14px;
+    border-radius: 10px;
+    transition: background 0.2s ease;
+}
+
+.dropdown-menu a:hover {
     background: rgba(255, 255, 255, 0.12);
+}
+
+.main-nav {
+    display: none;
 }
 
 .page-wrapper {
@@ -73,16 +107,17 @@ a {
 
 .hero-left {
     position: relative;
-    min-height: 320px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    text-align: center;
+    text-align: left;
     padding: 30px 24px;
+    gap: 32px;
 }
 
 .hero-title {
     z-index: 1;
+    max-width: 700px;
 }
 
 .hero-title p {
@@ -104,11 +139,8 @@ a {
 }
 
 .profile-photo {
-    position: absolute;
-    top: 28px;
-    left: 28px;
-    width: 200px;
-    max-width: 200px;
+    width: 220px;
+    max-width: 220px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 24px;
