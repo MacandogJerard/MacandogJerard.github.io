@@ -236,6 +236,11 @@ a {
     box-shadow: 0 14px 30px rgba(0, 0, 0, 0.14);
 }
 
+.project-board.project-with-image {
+    display: grid;
+    gap: 18px;
+}
+
 .project-board h3 {
     margin-bottom: 14px;
     color: #f4ecd8;
