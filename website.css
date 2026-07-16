@@ -358,13 +358,16 @@ a {
     width: 100%;
     margin-top: 18px;
     align-items: flex-start;
+    justify-content: center;
 }
 .capstone-specs .spec {
-    flex: 1 1 0;
+    flex: 0 0 auto;
+    width: fit-content;
+    max-width: 48%;
     background: rgba(255,255,255,0.03);
     border: 1px solid rgba(255,255,255,0.14);
     border-radius: 12px;
-    padding: 16px 18px;
+    padding: 12px 16px;
 }
 .capstone-specs .spec h5 {
     margin-bottom: 8px;
@@ -380,6 +383,7 @@ a {
 
 @media (max-width: 720px) {
     .capstone-specs { flex-direction: column; }
+    .capstone-specs .spec { width: 100%; max-width: 100%; }
 }
 
 .project-board a {
