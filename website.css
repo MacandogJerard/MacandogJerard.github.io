@@ -189,6 +189,27 @@ a {
     margin-bottom: 24px;
 }
 
+.skill-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.skill-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 999px;
+    color: #f4ecd8;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
 .section-card p:last-child {
     margin-bottom: 0;
 }
