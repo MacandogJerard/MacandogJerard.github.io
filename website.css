@@ -303,28 +303,23 @@ a {
 .social-footer a {
     display: inline-flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     color: #f4ecd8;
     background: #596d47;
-    padding: 12px 20px;
+    padding: 10px 18px;
     border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    transition: transform 0.2s ease, background 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .social-footer a:hover {
     transform: translateY(-2px);
-    background: rgba(89, 111, 72, 0.95);
 }
 
 .social-icon {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     object-fit: contain;
     display: block;
-    padding: 6px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.16);
 }
 @media (max-width: 900px) {
     .hero-section {
