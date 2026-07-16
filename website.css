@@ -186,6 +186,11 @@ a {
     font-weight: 400;
     color: #f1ead8;
     line-height: 1.75;
+    margin-bottom: 24px;
+}
+
+.section-card p:last-child {
+    margin-bottom: 0;
 }
 
 .social-footer {
