@@ -236,6 +236,73 @@ a {
     box-shadow: 0 14px 30px rgba(0, 0, 0, 0.14);
 }
 
+/* Contact page styles */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+    margin-top: 18px;
+}
+.contact-boxes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+.contact-box {
+    background: rgba(255,255,255,0.03);
+    border-radius: 14px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    border: 2px solid transparent;
+}
+.contact-icon {
+    width: 160px;
+    height: 100px;
+    object-fit: contain;
+    background: #ffffff;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    border: 2px solid rgba(0,0,0,0.06);
+    display: inline-block;
+}
+.contact-title {
+    font-size: 1rem;
+    color: #f4ecd8;
+    font-weight: 700;
+}
+.contact-link {
+    color: #d6c9b2;
+    text-decoration: none;
+    font-weight: 600;
+}
+.facebook-box { border-color: #1877f2; background: linear-gradient(180deg, rgba(24,119,242,0.06), rgba(24,119,242,0.02)); color: #1877f2; }
+.gmail-box { border-color: #d93025; background: linear-gradient(180deg, rgba(217,48,37,0.06), rgba(217,48,37,0.02)); color: #d93025; }
+.linkedin-box { border-color: #0a66c2; background: linear-gradient(180deg, rgba(10,102,194,0.06), rgba(10,102,194,0.02)); color: #0a66c2; }
+
+.contact-form {
+    background: rgba(255,255,255,0.03);
+    border-radius: 14px;
+    padding: 18px;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+.contact-form h3 { margin-bottom: 12px; color: #f4ecd8; }
+.contact-form label { display: block; margin-top: 10px; color: #d6c9b2; font-size: 0.95rem; }
+.contact-form input, .contact-form textarea { width: 100%; margin-top: 6px; padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); background: #0f0f0f; color: #f4ecd8; }
+.btn-submit { margin-top: 12px; padding: 10px 14px; border-radius: 8px; border: 2px solid #4b5320; background: transparent; color: #4b5320; font-weight: 700; cursor: pointer; }
+
+@media (max-width: 880px) {
+    .contact-container { grid-template-columns: 1fr; }
+    .contact-boxes { grid-auto-flow: column; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .contact-box { padding: 12px; }
+    .contact-icon { width: 120px; height: 76px; padding: 6px; }
+}
+
 .project-board.project-with-image {
     display: grid;
     gap: 18px;
